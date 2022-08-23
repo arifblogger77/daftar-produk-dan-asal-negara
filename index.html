@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
 <body>
-    
-    <a class="github-fork-ribbon left-bottom fixed" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
-        
-    
+
+    <a class="github-fork-ribbon left-bottom fixed"
+        href="https://github.com/arifblogger77/daftar-produk-dan-asal-negara" data-ribbon="Fork me on GitHub"
+        title="Fork me on GitHub">Fork me on GitHub</a>
+
+
     <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
@@ -37,26 +41,27 @@
             </tr>
         </tfoot>
     </table>
-    
+
     <script>
-    $(document).ready(function () {
-      $('#example').DataTable({
-          ajax: 'datas.json',
-          columns: [
-              { data: 'merek' },
-              { data: 'jenis' },
-              { data: 'lokasi' },
-              { data: 'negara' },
-              { data: 'grup_perusahaan' },
-              { data: 'perusahaan' },
-              { data: 'manufaktur' },
-              { data: 'distributor' },
-              { data: 'website' },
-          ],
-      });
-  });
+        $(document).ready(function () {
+            $('#example').DataTable({
+                ajax: 'datas.json',
+                columns: [
+                    { data: 'merek' },
+                    { data: 'jenis' },
+                    { data: 'lokasi' },
+                    { data: 'negara' },
+                    { data: 'grup_perusahaan' },
+                    { data: 'perusahaan' },
+                    { data: 'manufaktur' },
+                    { data: 'distributor' },
+                    { data: 'website' },
+                ],
+            });
+        });
     </script>
-    
-    
+
+
 </body>
+
 </html>
